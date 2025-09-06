@@ -1,0 +1,10 @@
+
+# GoFrame CLI tool configuration.
+gfcli:
+  gen:
+    dao:
+      - link:            "mysql:root:111111@tcp(127.0.0.1:3306)/gf2"
+        tables:          "" #生成代码的表
+        removePrefix:    "gf_"
+        descriptionTag:  true
+        noModelComment:  true

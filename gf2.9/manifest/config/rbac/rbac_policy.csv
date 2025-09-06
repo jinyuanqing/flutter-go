@@ -1,0 +1,8 @@
+
+//存入了数据库,此处什么都不写
+"p, alice, data1, read"
+"p, bob, data2, write"
+"p, admin, data2, read"
+"p, admin, data2, write"
+
+g, alice, admin

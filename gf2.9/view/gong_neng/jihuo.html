@@ -1,0 +1,118 @@
+ <!-- http://127.0.0.1:8199/xitong/compare_time?Str_jiami=f74811179a62aa6a77d2d86648a5788d52128d2b239ace297a3192d1208257352426591e73af2a4fcadb61a8c1138c37 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nutui/nutui/dist/style.css" />
+    <!-- 引入Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- 引入NutUI组件库 -->
+    <script src="https://cdn.jsdelivr.net/npm/@nutui/nutui/dist/nutui.umd.js"></script>
+<!--    &lt;!&ndash; vue路由 &ndash;&gt;-->
+<!--    <script src="https://unpkg.com/vue-router@4"></script>-->
+   
+</head>
+<body>
+<div id="app">
+     ((.isok))
+    {{a}}
+    {{Str_jiami}}
+
+    <nut-row>
+        <nut-col :span="24">
+          <div class="flex-content"> 
+
+   <h1 v-if=((.isok))>  恭喜您验证邮箱成功了! </h1>
+    <h1 v-else> 超时(10分钟内有效),请重新验证! </h1>
+
+ 
+    <nut-button  v-if=((.isok)) type="info" @click="zhuce_ok()">验证邮箱成功,下一步注册</nut-button>
+     <nut-button v-else type="primary"  @click="zhuce_false()" >验证不成功,重新验证 </nut-button>
+    
+
+          </div>
+        </nut-col>
+      </nut-row>
+ 
+</div>
+<script>
+
+    // 在 #app 标签下渲染一个按钮组件
+    const app = Vue.createApp({
+        data(){return{
+            a: '((.isok))',//这里会解析xitong.go传递过来的参数isok,会当作字符串的真假值 .{{.变量}}也是可以正常解析的.但是编辑器会报错,运行不影响
+            Str_jiami:'((.Str_jiami))'//解析传递过来的参数2.注意这里的写法单引号内部,双括号
+            }},
+        // template: `//可以写taroui组件
+     
+
+     
+        // `,
+
+        methods:{
+
+            xiugai(){
+
+                this.color1="yellow";
+                this.checked=false
+            },
+            zhuce_ok(){
+
+                //taro通过push进行跳转
+//   Taro.navigateTo  ({  url:'http://localhost:1419/#/zhuce'})
+//                 Taro.navigateTo  ({  url:'pages/index/index'})
+
+//vue3应用内跳转
+    // this.$router.push('http://localhost:1419/#/zhuce')
+              console.log(    this.Str_jiami);
+                // window.location.href="https://baidu.com" ;//可以后退返回先前页面
+                window.location.replace("http://localhost:10087/#/zhuce?j=((.Str_jiami))") ;//不可以后退返回先前页面.注意这里的写法与单引号内部,双括号 不同哦,去掉了单引号
+                // window.open(url,'跳转方式') 跳转方式：_self--在当前页打开_blank--在新页面打开   _top：框架网页中在上部窗口中显示目标
+                console.log(  "this.href");
+            },  zhuce_false(){//激活邮箱不成功
+
+                console.log(    this.Str_jiami);
+// window.location.href="https://baidu.com" ;//可以后退返回先前页面
+window.location.replace("http://localhost:10087/#/u?isok=false") ;//不可以后退返回先前页面
+ 
+},
+
+}
+    });
+    app.use(nutui);
+    app.mount("#app");
+</script>
+
+<!-- <style lang="scss" scoped>要转换css地址http://www.wetools.com/sass-to-css</style> -->
+<style >
+   .nut-row {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.nut-row:not(:last-child) .nut-col {
+  margin-bottom: 15px;
+}
+
+.flex-content {
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1F1C1C;
+}
+
+.flex-content.flex-content-light {
+  background: #ffc7c4;
+}
+
+.flex-content.flex-content-height {
+  height: 50px;
+}
+
+    </style>
+    
+  </body>
+</html>

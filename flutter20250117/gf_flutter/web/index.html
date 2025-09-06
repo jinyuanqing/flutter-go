@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_application_1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>flutter_application_1</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+ 
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="js/js.js" type="application/javascript"> 
+  //国内加载canvas. flutter3.27.1好像 不加也行,加载字体速度也非常快
+    // 直接将 canvaskit-wasm 下载到 web 目录下。然后引用 注意版本.下载地址https://www.jsdelivr.com/package/npm/canvaskit-wasm?tab=files
+    // window.flutterConfiguration = {
+    //   canvasKitBaseUrl: "./canvaskit-wasm-0.39.1/package/bin/"
+    // };
+    </script>
+  
+   
+ 
+</body>
+</html>

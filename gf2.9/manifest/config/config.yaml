@@ -1,0 +1,56 @@
+# HTTP Server.
+server:
+  address:             ":8199"
+  dumpRouterMap:       true
+  routeOverWrite:      true
+  accessLogEnabled:    true
+  openapiPath:         "/api.json"
+  swaggerPath:         "/swagger"
+  uploadfile_size:   500000  #上传文件大小限制500k
+supportedSubmitMethods: ["get", "head"]
+# Global logging.
+logger:
+  level : "all"
+  stdout: true
+gToken:
+
+  DefaultCacheKey : "GToken:"
+
+
+
+database:
+  logger:
+    level:   "all"
+    stdout:  true
+
+  default:
+    link:   "mysql:root:111111@tcp(127.0.0.1:3306)/gf2?loc=Local&parseTime=true" #数据库账号密码/数据库名称gf2  #loc=Local是本地时区,否则mysql的created_at会少8小时哦
+    debug:  true
+    maxLifetime:   "30s"
+
+
+
+#视图模板位置
+viewer:
+  Paths      : ["/view"] # 模板文件搜索目录路径，建议使用绝对路径。默认为当前程序工作路径
+  DefaultFile: "index.html"          # 默认解析的模板引擎文件。默认为"index.html"
+  Delimiters:  ["((", "))"]      # 模板引擎变量分隔符号。默认为 ["{{", "}}"] 这里必须更改下,否则html模板中使用不识别vue的变量{变量}. html模板文件的变量位  ((.neirong))
+  AutoEncode :  false                 # 是否默认对变量内容进行XSS编码。默认为false
+  # [viewer.Data]                       # 自定义的全局Key-Value键值对，将在模板解析中可被直接使用到
+  #     Key1 = "Value1"
+  #     Key2 = "Value2"
+
+# Redis 配置示例
+redis:
+  # 单实例配置示例1
+  default:
+    address: 127.0.0.1:6379
+    db: 0
+    pass: 123456
+    idleTimeout: 600
+  # 单实例配置示例2
+  cache1:
+    address: 127.0.0.1:6379
+    db: 1
+    pass: 123456
+    idleTimeout: 600

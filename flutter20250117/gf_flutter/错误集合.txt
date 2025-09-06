@@ -1,0 +1,25 @@
+Error: setState() called after dispose(): _shangchuanshezhiState#7feb7(lifecycle state: defunct, not mounted)
+
+
+
+
+class MSTwoListViewDemo2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+     // SliverFixedExtentList 是一个 Sliver，它可以生成高度相同的列表项。
+     // 再次提醒，如果列表项高度相同，我们应该优先使用SliverFixedExtentList 
+     // 和 SliverPrototypeExtentList，如果不同，使用 SliverList.
+    SliverFixedExtentList listSliver = SliverFixedExtentList(
+      delegate: SliverChildBuilderDelegate((ctx, index) {
+        return ListTile(
+          title: Text("$index"),
+        );
+      }, childCount: 10),
+      itemExtent: 56,
+    );
+    return CustomScrollView(
+      slivers: [listSliver, listSliver],
+    );
+  }
+}
+ 

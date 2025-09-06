@@ -1,0 +1,27 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter20220527",
+            "request": "launch",
+            "type": "dart",
+            "args": ["-d", "chrome","--web-port", "10087","--web-hostname","127.0.0.1"],
+
+        },
+        {
+            "name": "flutter20220527 (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",    "args": ["-d", "chrome","--web-port", "10087","--web-hostname","127.0.0.1"],
+        },
+        {
+            "name": "flutter20220527 (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",    "args": ["-d", "chrome","--web-port", "10087","--web-hostname","127.0.0.1"],
+        }
+    ]
+}

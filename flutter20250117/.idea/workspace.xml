@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89348607-d5cc-4381-ad6b-eb51f12ce7c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/gf_flutter/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.bin.json" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.bin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/FontManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/FontManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/admin_deng_lu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/admin/admin_deng_lu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/left_menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/left_menu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/wenzhangguanli.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/wenzhangguanli.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/yonghuxinxi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/yonghuxinxi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/zhandianmingcheng.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/zhandianmingcheng.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/admin/left_menu/pages/站点域名.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/model1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/model1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/quan_ju.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/quan_ju.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/user/wenzhang/wenzhangfenlei.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/user/wenzhang/wenzhangfenlei.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/lib/widgets/widget_shai_xuan.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/lib/widgets/widget_shai_xuan.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gf_flutter/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/gf_flutter/笔记.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/gf_flutter" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="31frMp88UzORO2NBGlIVhVP6zHF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/pro/Go/go20250117/flutter20250117",
+    "settings.editor.selected.configurable": "flutter.settings",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89348607-d5cc-4381-ad6b-eb51f12ce7c1" name="Changes" comment="" />
+      <created>1755925922259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755925922259</updated>
+    </task>
+    <servers />
+  </component>
+</project>
