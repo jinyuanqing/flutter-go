@@ -24,7 +24,7 @@ environment:
 # 或者如果 visual_editor 有其他冲突的依赖，也可以在这里指定有冲突的包和版本.获取包没问题,但是调试控制台报错也在这里添加最新版的包和版本
 dependency_overrides:
   collection: ^1.19.0
-  characters: ^1.4.0  # 添加这一行来解决版本冲突
+  characters: ^1.4.0  # 添加这一行来解决版本冲突1
   
   intl: any #0.19.0
   flutter_colorpicker: ^1.1.0 #获取包没问题,但是调试控制台报错colorpicker.dart:669:53: Error: The getter 'bodyText2' isn't defined for the class 'TextTheme'.的报错处理dependency_overrides添加最新的包和版本
