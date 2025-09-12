@@ -45,7 +45,7 @@ class UserGather extends StatelessWidget {
 Row(
   children: <Widget>[
    Container(
-        height: 600,width: constraints.maxWidth,
+        height: 2/3*constraints.maxHeight,width: constraints.maxWidth,
         alignment: Alignment.center,
         child: Stack(
           
