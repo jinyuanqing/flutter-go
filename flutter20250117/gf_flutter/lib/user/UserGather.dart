@@ -4,7 +4,7 @@ import '/user/particle/particle_page.dart';
 import '/user/particle/particle_widget.dart';
 import '/user/config.dart';
 import 'dart:math';
-
+import '/user/wenzixiaoguo/glass.dart';
 
 import '/user/wenzixiaoguo/dazi.dart';
 import '/user/wenzixiaoguo/daxiao.dart';
@@ -13,7 +13,7 @@ import '/user/wenzixiaoguo/bolang.dart';
 import '/user/wenzixiaoguo/zuoyou.dart';
 
 import '/user/wenzixiaoguo/posui.dart';
-
+import 'package:glass_kit/glass_kit.dart';
 
 class UserGather extends StatelessWidget {  
   // 从配置文件中获取变量
@@ -184,6 +184,281 @@ Row(
                         ),
                       ],
                     ),
+   Wrap(
+                      spacing: 20.0,runSpacing:15.0,
+                      children: <Widget>[
+ 
+Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child: GlassContainer(
+          height: 300,
+          width: 350,
+          gradient: LinearGradient(
+            colors: [
+              const Color.fromARGB(255, 241, 237, 237).withOpacity(0.40),
+              const Color.fromARGB(255, 174, 194, 177).withOpacity(0.10),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderGradient: LinearGradient(
+            colors: [
+              Colors.white.withOpacity(0.60),
+              Colors.white.withOpacity(0.10),
+              Colors.purpleAccent.withOpacity(0.05),
+              Colors.purpleAccent.withOpacity(0.60),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            stops: [0.0, 0.39, 0.40, 1.0],
+          ),
+          blur: 20,
+          borderRadius: BorderRadius.circular(24.0),
+          borderWidth: 2.0,
+          borderColor:const Color.fromARGB(118, 255, 193, 7),
+          elevation: 3.0,
+          isFrostedGlass: true,
+          shadowColor: Colors.purple.withOpacity(0.20),
+          child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+               Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+)
+
+          ) 
+        ),
+      ),
+
+Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),
+
+Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),
+
+
+          Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),
+          Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),Container(
+       // alignment: Alignment.center,
+        decoration:const BoxDecoration(
+          // image: DecorationImage(
+          //   image: AssetImage('assets/images/0.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+        ),
+        child:
+      GlassContainer.frostedGlass( height: 300, width: 350,  borderColor:Colors.amber,child:const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("遥遥领先中国区"),
+                  Text("无限金币MCU掉落芯片"),
+                Text("2025年1月17日"),
+  ],
+))
+
+          ) ),
+
+                      ]),
+
+
                     Text(AppConfig.serverInfoText,
                         style: TextStyle(fontSize: 20, color: Colors.blue)),
                     Container(
