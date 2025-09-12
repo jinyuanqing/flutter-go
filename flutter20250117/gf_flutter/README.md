@@ -1,6 +1,6 @@
 # gf_flutter
 
- 升级 flutter 3.27.1 到 flutter3.32.2
+ 升级 flutter 3.27.1 到 flutter3.32.2.
  
 ## 升级过程中的错误和解决方法
 
