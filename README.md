@@ -6,7 +6,7 @@
 
 
 # 框架版本
-flutter: 3.27.1
+flutter: 3.35.2
 goframe: 2.9.0
 mysql: 8.0.12
 redis: 3.0.504
