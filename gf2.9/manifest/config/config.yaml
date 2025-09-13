@@ -46,11 +46,11 @@ redis:
   default:
     address: 127.0.0.1:6379
     db: 0
-    pass: 123456
+    pass: 
     idleTimeout: 600
   # 单实例配置示例2
   cache1:
     address: 127.0.0.1:6379
     db: 1
-    pass: 123456
+    pass: 
     idleTimeout: 600
