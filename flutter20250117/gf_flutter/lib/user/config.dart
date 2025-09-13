@@ -51,7 +51,7 @@ class AppConfig {
   static String serverText = '区服';
 
   // 图片资源
-  static String bannerImage = 'https://picsum.photos/1920/600';
+  static String bannerImage = 'images/00.jpg';
   static List<String> bannerImages = [
     'https://picsum.photos/400/300',
     'https://picsum.photos/400/300',

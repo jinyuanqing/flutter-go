@@ -55,7 +55,7 @@ Row(
 
 
     Positioned.fill(child: 
-    Image.network(AppConfig.bannerImage, ),
+    Image.asset(AppConfig.bannerImage,fit: BoxFit.cover, ),//必须加fit属性,否则图片不填充整个屏幕宽度
     ),
    Row(  mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
