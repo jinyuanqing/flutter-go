@@ -49,13 +49,14 @@ Row(
         alignment: Alignment.center,
         child: Stack(
           
-          
+          //fit: StackFit.expand,
           
           children: <Widget>[
 
 
     Positioned.fill(child: 
-    Image.asset(AppConfig.bannerImage,fit: BoxFit.cover, ),//必须加fit属性,否则图片不填充整个屏幕宽度
+    Image.asset(AppConfig.bannerImage,fit: BoxFit.cover,
+     ),//必须加fit属性,否则图片不填充整个屏幕宽度
     ),
    Row(  mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
