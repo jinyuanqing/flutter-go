@@ -11,7 +11,7 @@
  Target Server Version : 80012 (8.0.12)
  File Encoding         : 65001
 
- Date: 12/09/2025 16:18:41
+ Date: 13/09/2025 21:11:58
 */
 
 SET NAMES utf8mb4;
@@ -353,36 +353,36 @@ CREATE TABLE `wen_zhang`  (
 -- ----------------------------
 -- Records of wen_zhang
 -- ----------------------------
-INSERT INTO `wen_zhang` VALUES (203, '这是第一个修改得标题', '游学', '这是第一个修改得的内容', 'http://127.0.0.1:8199/upload_file/f627ff60-3922-43c5-91fc-9e72d8a24b11.jpg', '[{\"insert\":\"这是第一个修改得的内容\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 999284, 1000002, 1, '1', '0', NULL, '2022-12-07 15:24:44', '2024-08-09 10:58:41');
-INSERT INTO `wen_zhang` VALUES (204, '2', '2', '2', 'http://127.0.0.1:8199/upload_file/4f385ad4-e7be-43d1-bc57-7e673724026e.jpg', '[{\"insert\":\"2\"},{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/6c6e9e60-3000-45e1-b045-a0bbcb28d05b.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 9, 2, 3, '0', '1', NULL, '2022-12-07 15:25:00', '2025-08-06 12:29:58');
-INSERT INTO `wen_zhang` VALUES (205, '第一个', '游学', '额娃娃认为', 'thumbnail.png', '[{\"insert\":\"1223\"},{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/3cc08a7f-406b-4998-9151-2f1dc2810026.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 84, 15, 1, '1', '1', NULL, '2022-12-24 09:07:29', '2025-08-06 12:30:01');
-INSERT INTO `wen_zhang` VALUES (218, '第一个', '游学', '额娃娃认为', 'thumbnail.png', '[{\"insert\":\"企鹅\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 25, 4, 2, '1', '0', NULL, '2022-12-24 10:16:34', '2024-04-01 17:21:50');
-INSERT INTO `wen_zhang` VALUES (219, '1you', '2yx', '1yx', 'thumbnail.png', '[{\"insert\":\"1yx\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '1', '1', NULL, '2022-12-24 10:30:48', '2024-07-09 08:18:38');
-INSERT INTO `wen_zhang` VALUES (220, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 41, 1, 1, '0', '1', NULL, '2022-12-25 17:33:14', '2024-04-03 14:47:57');
-INSERT INTO `wen_zhang` VALUES (221, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 8, 0, 1, '0', '0', NULL, '2022-12-25 17:33:19', '2024-01-26 18:41:33');
-INSERT INTO `wen_zhang` VALUES (222, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 5, 0, 1, '0', '0', NULL, '2022-12-25 17:33:20', '2023-05-31 06:06:10');
-INSERT INTO `wen_zhang` VALUES (223, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 1, 0, 1, '0', '0', NULL, '2022-12-25 17:33:22', '2023-03-09 10:15:04');
-INSERT INTO `wen_zhang` VALUES (224, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 3, 0, 1, '0', '0', NULL, '2022-12-25 17:33:24', '2023-12-23 16:25:53');
-INSERT INTO `wen_zhang` VALUES (225, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 0, 0, 6, '0', '0', NULL, '2022-12-25 17:33:25', '2023-01-16 11:58:06');
-INSERT INTO `wen_zhang` VALUES (226, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 1, 0, 1, '1', '1', NULL, '2022-12-25 17:33:27', '2023-03-09 10:11:25');
-INSERT INTO `wen_zhang` VALUES (228, 'new0', '2', 'new', 'thumbnail.png', '[{\"insert\":\"new\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', NULL, '2023-02-03 12:55:59', '2023-12-20 21:45:29');
-INSERT INTO `wen_zhang` VALUES (229, 'new1', '2', 'new', 'thumbnail.png', '[{\"insert\":\"newoo\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 4, '1', '1', NULL, '2023-02-03 12:56:35', '2023-12-20 21:44:46');
-INSERT INTO `wen_zhang` VALUES (230, 'go1', '游学', 'go', 'thumbnail.png', '[{\"insert\":\"go\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '1', '0', NULL, '2023-02-03 13:20:20', '2023-02-11 11:51:54');
-INSERT INTO `wen_zhang` VALUES (231, '3', '2', '3', 'thumbnail.png', '[{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 5, '0', '0', NULL, '2023-02-03 19:02:31', '2023-12-20 20:46:22');
-INSERT INTO `wen_zhang` VALUES (232, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"嵌入式开发1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', NULL, '2023-05-30 00:22:24', '2023-05-30 00:22:24');
-INSERT INTO `wen_zhang` VALUES (233, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', NULL, '2023-05-30 00:26:06', '2023-05-30 00:26:06');
-INSERT INTO `wen_zhang` VALUES (234, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', NULL, '2023-05-30 00:29:30', '2023-05-30 00:29:30');
-INSERT INTO `wen_zhang` VALUES (235, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', NULL, '2023-05-30 00:31:59', '2023-05-30 00:31:59');
-INSERT INTO `wen_zhang` VALUES (236, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', NULL, '2023-05-30 00:33:03', '2023-06-12 17:51:34');
-INSERT INTO `wen_zhang` VALUES (237, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', NULL, '2023-05-30 00:36:03', '2023-05-30 00:36:03');
-INSERT INTO `wen_zhang` VALUES (238, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"123\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', NULL, '2023-05-30 00:43:05', '2023-05-30 09:49:35');
-INSERT INTO `wen_zhang` VALUES (239, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', NULL, '2023-05-30 00:47:40', '2023-05-30 09:49:28');
-INSERT INTO `wen_zhang` VALUES (243, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 4, '0', '0', NULL, '2023-05-30 01:21:43', '2023-05-30 01:21:43');
-INSERT INTO `wen_zhang` VALUES (244, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 2, 0, 2, '0', '0', NULL, '2023-05-30 01:24:50', '2023-06-10 09:54:47');
-INSERT INTO `wen_zhang` VALUES (245, '1', '123', '1', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 1, 3, '0', '0', NULL, '2023-05-30 09:26:59', '2023-05-30 09:49:21');
-INSERT INTO `wen_zhang` VALUES (246, '1', '管理员', '2', 'thumbnail.png', '[{\"insert\":\"3\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', NULL, '2023-12-16 10:38:11', '2023-12-20 21:45:33');
-INSERT INTO `wen_zhang` VALUES (247, '1', '管理', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', NULL, '2023-12-21 10:05:07', '2023-12-21 10:08:13');
-INSERT INTO `wen_zhang` VALUES (248, '1', '管理', '1', 'thumbnail.png', '[{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/a447a0fc-fa1a-4d70-ad62-eadbc605ad79.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', NULL, '2023-12-21 10:26:51', '2024-02-03 13:32:43');
+INSERT INTO `wen_zhang` VALUES (203, '这是第一个修改得标题', '游学', '这是第一个修改得的内容', 'http://127.0.0.1:8199/upload_file/f627ff60-3922-43c5-91fc-9e72d8a24b11.jpg', '[{\"insert\":\"这是第一个修改得的内容\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 999284, 1000002, 1, '1', '0', b'0', '2022-12-07 15:24:44', '2024-08-09 10:58:41');
+INSERT INTO `wen_zhang` VALUES (204, '2', '2', '2', 'http://127.0.0.1:8199/upload_file/4f385ad4-e7be-43d1-bc57-7e673724026e.jpg', '[{\"insert\":\"2\"},{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/6c6e9e60-3000-45e1-b045-a0bbcb28d05b.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 9, 2, 3, '0', '1', b'0', '2022-12-07 15:25:00', '2025-08-06 12:29:58');
+INSERT INTO `wen_zhang` VALUES (205, '第一个', '游学', '额娃娃认为', 'thumbnail.png', '[{\"insert\":\"1223\"},{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/3cc08a7f-406b-4998-9151-2f1dc2810026.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 84, 15, 1, '1', '1', b'0', '2022-12-24 09:07:29', '2025-08-06 12:30:01');
+INSERT INTO `wen_zhang` VALUES (218, '第一个', '游学', '额娃娃认为', 'thumbnail.png', '[{\"insert\":\"企鹅\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 25, 4, 2, '1', '0', b'0', '2022-12-24 10:16:34', '2024-04-01 17:21:50');
+INSERT INTO `wen_zhang` VALUES (219, '1you', '2yx', '1yx', 'thumbnail.png', '[{\"insert\":\"1yx\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '1', '1', b'0', '2022-12-24 10:30:48', '2024-07-09 08:18:38');
+INSERT INTO `wen_zhang` VALUES (220, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 41, 1, 1, '0', '1', b'0', '2022-12-25 17:33:14', '2024-04-03 14:47:57');
+INSERT INTO `wen_zhang` VALUES (221, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 8, 0, 1, '0', '0', b'0', '2022-12-25 17:33:19', '2024-01-26 18:41:33');
+INSERT INTO `wen_zhang` VALUES (222, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 5, 0, 1, '0', '0', b'0', '2022-12-25 17:33:20', '2023-05-31 06:06:10');
+INSERT INTO `wen_zhang` VALUES (223, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 1, 0, 1, '0', '0', b'0', '2022-12-25 17:33:22', '2023-03-09 10:15:04');
+INSERT INTO `wen_zhang` VALUES (224, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 3, 0, 1, '0', '0', b'0', '2022-12-25 17:33:24', '2023-12-23 16:25:53');
+INSERT INTO `wen_zhang` VALUES (225, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 0, 0, 6, '0', '0', b'0', '2022-12-25 17:33:25', '2023-01-16 11:58:06');
+INSERT INTO `wen_zhang` VALUES (226, '1', '2', '22', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":3}}]', 1, 0, 1, '1', '1', b'0', '2022-12-25 17:33:27', '2023-03-09 10:11:25');
+INSERT INTO `wen_zhang` VALUES (228, 'new0', '2', 'new', 'thumbnail.png', '[{\"insert\":\"new\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', b'0', '2023-02-03 12:55:59', '2023-12-20 21:45:29');
+INSERT INTO `wen_zhang` VALUES (229, 'new1', '2', 'new', 'thumbnail.png', '[{\"insert\":\"newoo\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 4, '1', '1', b'0', '2023-02-03 12:56:35', '2023-12-20 21:44:46');
+INSERT INTO `wen_zhang` VALUES (230, 'go1', '游学', 'go', 'thumbnail.png', '[{\"insert\":\"go\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '1', '0', b'0', '2023-02-03 13:20:20', '2023-02-11 11:51:54');
+INSERT INTO `wen_zhang` VALUES (231, '3', '2', '3', 'thumbnail.png', '[{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 5, '0', '0', b'0', '2023-02-03 19:02:31', '2023-12-20 20:46:22');
+INSERT INTO `wen_zhang` VALUES (232, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"嵌入式开发1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', b'0', '2023-05-30 00:22:24', '2023-05-30 00:22:24');
+INSERT INTO `wen_zhang` VALUES (233, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', b'0', '2023-05-30 00:26:06', '2023-05-30 00:26:06');
+INSERT INTO `wen_zhang` VALUES (234, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', b'0', '2023-05-30 00:29:30', '2023-05-30 00:29:30');
+INSERT INTO `wen_zhang` VALUES (235, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', b'0', '2023-05-30 00:31:59', '2023-05-30 00:31:59');
+INSERT INTO `wen_zhang` VALUES (236, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', b'0', '2023-05-30 00:33:03', '2023-06-12 17:51:34');
+INSERT INTO `wen_zhang` VALUES (237, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"324\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 3, '0', '0', b'0', '2023-05-30 00:36:03', '2023-05-30 00:36:03');
+INSERT INTO `wen_zhang` VALUES (238, '嵌入式开发1', 'youxue', '嵌入式开发1', 'http://127.0.0.1:8199/upload_file/2a202788-db4b-4553-b61e-46fac762f88b.jpg', '[{\"insert\":\"123\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', b'0', '2023-05-30 00:43:05', '2023-05-30 09:49:35');
+INSERT INTO `wen_zhang` VALUES (239, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 3, '0', '0', b'0', '2023-05-30 00:47:40', '2023-05-30 09:49:28');
+INSERT INTO `wen_zhang` VALUES (243, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 4, '0', '0', b'0', '2023-05-30 01:21:43', '2023-05-30 01:21:43');
+INSERT INTO `wen_zhang` VALUES (244, '1', 'youxue', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 2, 0, 2, '0', '0', b'0', '2023-05-30 01:24:50', '2023-06-10 09:54:47');
+INSERT INTO `wen_zhang` VALUES (245, '1', '123', '1', 'thumbnail.png', '[{\"insert\":\"2\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 1, 3, '0', '0', b'0', '2023-05-30 09:26:59', '2023-05-30 09:49:21');
+INSERT INTO `wen_zhang` VALUES (246, '1', '管理员', '2', 'thumbnail.png', '[{\"insert\":\"3\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', b'0', '2023-12-16 10:38:11', '2023-12-20 21:45:33');
+INSERT INTO `wen_zhang` VALUES (247, '1', '管理', '1', 'thumbnail.png', '[{\"insert\":\"1\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', b'0', '2023-12-21 10:05:07', '2023-12-21 10:08:13');
+INSERT INTO `wen_zhang` VALUES (248, '1', '管理', '1', 'thumbnail.png', '[{\"insert\":{\"image\":\"http://127.0.0.1:8199/upload_file/a447a0fc-fa1a-4d70-ad62-eadbc605ad79.jpg\"}},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 1, 0, 1, '0', '0', b'0', '2023-12-21 10:26:51', '2024-02-03 13:32:43');
 INSERT INTO `wen_zhang` VALUES (249, 'test', '管理', 'test323', 'thumbnail.png', '[{\"insert\":\"treterterte\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '1', '1', b'0', '2024-03-19 18:38:59', '2024-06-21 13:26:13');
 INSERT INTO `wen_zhang` VALUES (250, '20250329', '管理员', '20250329', 'thumbnail.png', '[{\"insert\":\"r\"},{\"insert\":\"trtr\",\"attributes\":{\"bold\":true,\"italic\":true,\"underline\":true}},{\"insert\":\"t\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-03-29 11:17:10', '2025-03-29 11:17:10');
 INSERT INTO `wen_zhang` VALUES (251, '20250329', '管理员', '20250329', 'thumbnail.png', '[{\"insert\":\"r\"},{\"insert\":\"trtr\",\"attributes\":{\"bold\":true,\"italic\":true,\"underline\":true}},{\"insert\":\"t\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-03-29 11:17:36', '2025-03-29 11:17:36');
@@ -390,8 +390,8 @@ INSERT INTO `wen_zhang` VALUES (252, '20250329', '管理员', '20250329', 'thumb
 INSERT INTO `wen_zhang` VALUES (253, '123', '管理员', '123', 'http://127.0.0.1:8199/upload_file/993a1f75-db4c-48b8-8301-69cfd708745a.png', '[{\"insert\":\"123\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-23 13:18:12', '2025-08-23 13:18:12');
 INSERT INTO `wen_zhang` VALUES (254, '123', '管理员', '123', 'http://127.0.0.1:8199/upload_file/993a1f75-db4c-48b8-8301-69cfd708745a.png', '[{\"insert\":\"123\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-23 13:18:24', '2025-08-23 13:18:24');
 INSERT INTO `wen_zhang` VALUES (255, '123', '管理员', '123', 'http://127.0.0.1:8199/upload_file/993a1f75-db4c-48b8-8301-69cfd708745a.png', '[{\"insert\":\"123\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-23 13:18:29', '2025-08-23 13:18:29');
-INSERT INTO `wen_zhang` VALUES (256, '', '管理员', '', 'thumbnail.png', '[{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 0, '0', '0', b'0', '2025-08-23 13:37:48', '2025-08-23 13:37:48');
-INSERT INTO `wen_zhang` VALUES (257, '今天是20250826', '管理员', '这是摘要今天是20250826', 'thumbnail.png', '[{\"insert\":\"这是摘要今天是20250826\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-26 16:48:38', '2025-08-26 16:48:38');
+INSERT INTO `wen_zhang` VALUES (256, '1', '管理员', '1', 'thumbnail.png', '[{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-23 13:37:48', '2025-08-23 13:37:48');
+INSERT INTO `wen_zhang` VALUES (257, '今天是20250826-', '管理员', '这是摘要今天是20250826', 'thumbnail.png', '[{\"insert\":\"这是摘要今天是20250826\"},{\"insert\":\"\\n\",\"attributes\":{\"header\":1}}]', 0, 0, 1, '0', '0', b'0', '2025-08-26 16:48:38', '2025-08-26 16:48:38');
 
 -- ----------------------------
 -- Table structure for wen_zhang_ping_lun
@@ -406,7 +406,7 @@ CREATE TABLE `wen_zhang_ping_lun`  (
   `update_at` datetime NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `a`(`wen_zhang_id` ASC) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci COMMENT = '文章评论表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci COMMENT = '文章评论表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of wen_zhang_ping_lun
