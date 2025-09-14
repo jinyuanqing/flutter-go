@@ -182,9 +182,11 @@ class _wenzhangfenlei extends State<Wenzhangfenlei>
     });
   }
 
-  Future<bool> get_article_for_id(int page2) async {
 
-       await YXHttp().http_get(map0api["获取文章"]!,  {"page": page2, "token": token,});
+  // ignore: non_constant_identifier_names
+  Future<bool> get_article_for_id({int page2 = 1, int fenlei_id = 1}) async {
+
+   article_list =    await YXHttp().http_get(map0api["获取文章"]!,  {"page": page2, "token": token,"fenleiid":2});
 
        return true;
   }
@@ -194,7 +196,9 @@ class _wenzhangfenlei extends State<Wenzhangfenlei>
     print("文章管理initState");
 
     get_fenlei();
-
+get_article_for_id( );//无需传入参数,使用默认值
+print(1);
+print(article_list);print(1);
     //监听滚动事件，打印滚动位置
     controller1.addListener(() {
       var pix = controller1.position.pixels;
@@ -1304,9 +1308,10 @@ controller:pageController,
                   SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {
-                        return ListTile(title: Text('Item $index'));
+                        print(index);
+                        return ListTile(title: Text("${article_list[index]["title"]}"));
                       },
-                      childCount: 10,
+                      childCount: 2,
                     ),
                   ),
                 ],

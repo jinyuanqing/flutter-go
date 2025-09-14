@@ -206,7 +206,7 @@ type Admin0get0article0num0Res struct {
 type Admin0get0article0Req struct {
 	g.Meta   `path:"/admin_get_article" method:"get" tags:"管理员" summary:"获取指定数量的文章" `
 	Page     int //指定获取文章的数量,page是页数从1开始.
-	Fenleiid int //参数可选
+	Fenleiid int `d:1 ` //参数默认1
 }
 type Admin0get0article0Res struct { //
 
