@@ -15,7 +15,7 @@ import 'package:flutter_swiper_plus/flutter_swiper_plus.dart';
 import 'article_list.dart';
 import 'package:get/get.dart' as Get; //get包和dio包都有此Response类型,防止冲突
 import '/model1.dart';
-
+import '/widgets/http.dart';
 class Wenzhangfenlei extends StatefulWidget {
   const Wenzhangfenlei({Key? key}) : super(key: key);
 
@@ -182,6 +182,12 @@ class _wenzhangfenlei extends State<Wenzhangfenlei>
     });
   }
 
+  Future<bool> get_article_for_id(int page2) async {
+
+       await YXHttp().http_get(map0api["获取文章"]!,  {"page": page2, "token": token,});
+
+       return true;
+  }
   @override
   void initState() {
     super.initState();
@@ -1300,7 +1306,7 @@ controller:pageController,
                       (BuildContext context, int index) {
                         return ListTile(title: Text('Item $index'));
                       },
-                      childCount: 100,
+                      childCount: 10,
                     ),
                   ),
                 ],
@@ -1323,7 +1329,7 @@ controller:pageController,
                 title: Text('$name - $index'),
               );
             },
-            childCount: 50,
+            childCount: 10,
           ),
         ),
       );
