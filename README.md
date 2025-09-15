@@ -15,13 +15,15 @@ redis: 3.0.504
 
 1. peacock 打开多个窗口后可以为每个窗口设置不同的颜色,方便区分.使用时在项目目录的.vscode目录下新建settings.json文件,添加如下内容:
 
-```json
-"peacock.favoriteColors": [
+{
+
+ "peacock.favoriteColors": [
     { "name": "Gatsby Purple", "value": "#639" },
     { "name": "Auth0 Orange", "value": "#eb5424" },
     { "name": "Azure Blue", "value": "#007fff" }
   ]
-```然后F1,输入Peacock: Choose a color,选择颜色即可.
+}
+然后F1,输入Peacock: Choose a color,选择颜色即可.
 
 2. trae.作者:marscode.提供ai代码提示功能.
 3. 文心快码.baidu.提供ai代码提示功能.
