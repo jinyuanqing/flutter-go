@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f561fad3-6568-48ee-b3aa-f3c4804c68f6" name="更改" comment="20240908首次提交">
-      <change beforePath="$PROJECT_DIR$/../flutter20250117/gf_flutter/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter20250117/gf_flutter/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter20250117/gf_flutter/build/35f7230de2d6cfa06a9bd9725e41ea1b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter20250117/gf_flutter/build/35f7230de2d6cfa06a9bd9725e41ea1b.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter20250117/gf_flutter/build/flutter_assets/FontManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter20250117/gf_flutter/build/flutter_assets/FontManifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flutter20250117/gf_flutter/lib/user/wenzhang/wenzhangfenlei.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter20250117/gf_flutter/lib/user/wenzhang/wenzhangfenlei.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter20250117/gf_flutter/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter20250117/gf_flutter/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1092,7 +1092,8 @@ class NestedScrollPage extends StatefulWidget {
 
 class _NestedScrollPageState extends State<NestedScrollPage> {
   final List<String> _tabs = const ['tab1', 'tab2', "tab3", "tab4"];
-  Future<bool> ? _yibu; // 修改类型为Future<bool>?
+ late Future<bool>  _yibu; // 修改类型为Future<bool>?
+// var _yibu;
   var article_list = []; 
 
   Future<bool> get_article_for_id({int page = 1, int fenlei_id = 1}) async {
@@ -1209,10 +1210,8 @@ class _NestedScrollPageState extends State<NestedScrollPage> {
 
 // print(i);
   //  article_list=[];
-  await get_article_for_id(page: 1, fenlei_id: i+1);//或bool a= await get_article_for_id(page: 1, fenlei_id: i+1);//这种写法不行_yibu=  get_article_for_id(page: 1, fenlei_id: i+1)) as Future<bool>?;
-setState(() {
-  
-});
+  _yibu=  get_article_for_id(page: 1, fenlei_id: i+1) ;//不必使用setstate(),FutureBuilder组件监控_yibu变化,变化后重新构建组件.
+     
 
                       },
                     );
