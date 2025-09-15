@@ -16,6 +16,9 @@ import 'article_list.dart';
 import 'package:get/get.dart' as Get; //get包和dio包都有此Response类型,防止冲突
 import '/model1.dart';
 import '/widgets/http.dart';
+
+var _yibu;
+
 class Wenzhangfenlei extends StatefulWidget {
   const Wenzhangfenlei({Key? key}) : super(key: key);
 
@@ -30,7 +33,7 @@ class _wenzhangfenlei extends State<Wenzhangfenlei>
     with AutomaticKeepAliveClientMixin {
   @override
   bool get wantKeepAlive => true;
-  var _yibu;
+
   int data_count = 0;
   var json_result = [];
   var article_list = [];
@@ -183,23 +186,17 @@ class _wenzhangfenlei extends State<Wenzhangfenlei>
     });
   }
 
-
   // ignore: non_constant_identifier_names
-  Future<bool> get_article_for_id({int page2 = 1, int fenlei_id = 1}) async {
 
-   article_list =    await YXHttp().http_get(map0api["获取文章"]!,  {"page": page2, "token": token,"fenleiid":2});
-
-       return true;
-  }
   @override
   void initState() {
     super.initState();
     print("文章管理initState");
 
     get_fenlei();
-_yibu =get_article_for_id( );//无需传入参数,使用默认值
-print(1);
-print(article_list);print(1);
+//_yibu =get_article_for_id( );//无需传入参数,使用默认值
+// print(1);
+// print(article_list);print(1);
     //监听滚动事件，打印滚动位置
     controller1.addListener(() {
       var pix = controller1.position.pixels;
@@ -1095,14 +1092,37 @@ class NestedScrollPage extends StatefulWidget {
 
 class _NestedScrollPageState extends State<NestedScrollPage> {
   final List<String> _tabs = const ['tab1', 'tab2', "tab3", "tab4"];
-    var _yibu;
-PageController pageController = PageController();
+  var _yibu;
+  var article_list = []; // 添加这一行
+
+  Future<bool> get_article_for_id({int page2 = 1, int fenlei_id = 1}) async {
+    try{
+    var res = await YXHttp().http_get(
+        map0api["获取文章"]!, {"page": page2, "token": token, "fenleiid": fenlei_id});
+
+    article_list = res;
+   
+  return true;
+    }catch (e) {
+       print("请求出错: $e"); // 添加错误处理
+      print(e);
+      return false;
+    } 
+     
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("z子组件初始化");
+    _yibu = get_article_for_id();
+  }
+
+  PageController pageController = PageController();
   @override
   Widget build(BuildContext context) {
-    return
-
-        
-        Scaffold(
+    return Scaffold(
       primary: false, //不i显示顶部appbar位置左侧的返回按钮.
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
@@ -1127,25 +1147,24 @@ PageController pageController = PageController();
           SliverAppBar(
         primary: false, titleSpacing: 0,
         // backgroundColor: const Color.fromARGB(0, 212, 226, 255), // 设置 AppBar 的背景颜色为白色
-        title:  
-         Container(
-                color: const Color.fromARGB(0, 51, 47, 47),
-                child: Center(
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                      Padding(
-                          padding: EdgeInsets.only(top: 20, bottom: 20.0),
-                          child: Text(
-                            "公告:网站永久域名为",
-                            style: TextStyle(
-                              fontFamily: "Schyler",
-                              fontSize: 20,
-                              // color: Color.fromARGB(255, 166, 255, 2)
-                            ),
-                          )),
-                    ])),
-              ),
+        title: Container(
+          color: const Color.fromARGB(0, 51, 47, 47),
+          child: Center(
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                Padding(
+                    padding: EdgeInsets.only(top: 20, bottom: 20.0),
+                    child: Text(
+                      "公告:网站永久域名为",
+                      style: TextStyle(
+                        fontFamily: "Schyler",
+                        fontSize: 20,
+                        // color: Color.fromARGB(255, 166, 255, 2)
+                      ),
+                    )),
+              ])),
+        ),
         automaticallyImplyLeading: false, //浮顶时候,不显示顶部appbar位置左侧的返回按钮.
         pinned: true, //必须为真,否则无法浮顶效果
         elevation: 160, //影深
@@ -1163,35 +1182,32 @@ PageController pageController = PageController();
 
         // 底部固定栏
         bottom: MyCustomAppBar(
-          child:Center(child: Column( mainAxisAlignment:MainAxisAlignment.center,
+          child: Center(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             
               Row(
                   spacing: 10,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List<Widget>.generate(list_fenlei.length, (int i) {
                     return ActionChip(
-                        avatar: CircleAvatar(
-                            //   backgroundColor: Colors.blue,
-                            child: Icon(font_menu_icon[i])),
-                        label: Text(
-                            list_fenlei[i],
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.black,
-                              // backgroundColor: Colors.grey[200]
-                            ),
-                          ),
-                          
-                          onPressed: () {
-                            print(list_fenlei[i]);
-                            // 立即跳转到索引为 1 的页面
-pageController.jumpToPage(i);
-                          },
-                        );
-
-
-
+                      avatar: CircleAvatar(
+                          //   backgroundColor: Colors.blue,
+                          child: Icon(font_menu_icon[i])),
+                      label: Text(
+                        list_fenlei[i],
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                          // backgroundColor: Colors.grey[200]
+                        ),
+                      ),
+                      onPressed: () {
+                        print(list_fenlei[i]);
+                        // 立即跳转到索引为 1 的页面
+                        pageController.jumpToPage(i);
+                      },
+                    );
                   })),
 //                PreferredSize(
 // preferredSize: Size.fromHeight(40),
@@ -1221,7 +1237,7 @@ pageController.jumpToPage(i);
               // )
               // ),
             ],
-           ) ),
+          )),
         ),
       ),
     );
@@ -1229,13 +1245,11 @@ pageController.jumpToPage(i);
 
   Widget _buildTabBarView() {
     return PageView(
-     
+      controller: pageController,
+      children:
 
-controller:pageController,
-      children: 
-      
-      // list_fenlei.map((String name) {
-      List<Widget>.generate(list_fenlei.length, (int i) {
+          // list_fenlei.map((String name) {
+          List<Widget>.generate(list_fenlei.length, (int i) {
         return SafeArea(
           top: false,
           bottom: false,
@@ -1297,43 +1311,46 @@ controller:pageController,
                     child: Container(
                       height: 100,
                       color: Colors.greenAccent,
-                      child:  Center(child: Text(list_fenlei[i])),
+                      child: Center(child: Text(list_fenlei[i])),
                     ),
                   ),
 
                   // 列表
                   buildContent(list_fenlei[i]),
 
-              
- FutureBuilder<bool>(
-                  //异步加载dio数据
-                  future: _yibu, //get_data1(1),
-                  builder:
-                      (BuildContext context, AsyncSnapshot<bool> snapshot) {
-                    // print("snapshot.data");
-                    // print(snapshot.data);
-                    if (snapshot.data == true) {
-                      return
-                  // 列表 100 行
-                  SliverList(
-                    delegate: SliverChildBuilderDelegate(
-                      (BuildContext context, int index) {
-                        print(index);
-                        return ListTile(title: Text("${article_list[index]["title"]}"));
-                      },
-                      childCount: 2,
-                    ),
-                  );
-                    } else {
-                      return SliverToBoxAdapter(
-                        child: Container(
-                          height: 100,
-                          color: Colors.white,
-                          child: const Center(child: Text('加载中...')),
-                        ),
-                      );
-                    }
-                  }),
+                  FutureBuilder<bool>(
+                      //异步加载dio数据
+                      future:
+                          _yibu, // fan防止每次Widget刷新future:fetchData()就会重新获取数据
+                      builder:
+                          (BuildContext context, AsyncSnapshot<bool> snapshot) {
+                         print("snapshot.data");
+                         print(snapshot.data);
+                         print(article_list.length);
+                        if (snapshot.data == true) {
+                          return
+                              // 列表 100 行
+                              SliverList(
+                            delegate: SliverChildBuilderDelegate(
+                              (BuildContext context, int index) {
+                                print(index);
+                                return ListTile(
+                                    title: Text(
+                                        "${article_list[index]['biaoti']}"));
+                              },
+                              childCount: article_list.length,
+                            ),
+                          );
+                        } else {
+                          return SliverToBoxAdapter(
+                            child: Container(
+                              height: 100,
+                              color: Colors.white,
+                              child: const Center(child: Text('加载中...')),
+                            ),
+                          );
+                        }
+                      }),
                 ],
               );
             },
@@ -1371,8 +1388,8 @@ class MyCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // Size get preferredSize => const Size.fromHeight(kToolbarHeight + 0);//此处0可以调整浮顶组件的高度.kToolbarHeight=56; 
+  // Size get preferredSize => const Size.fromHeight(kToolbarHeight + 0);//此处0可以调整浮顶组件的高度.kToolbarHeight=56;
 
-Size get preferredSize => const Size.fromHeight(32);//此处0可以调整浮顶组件的高度.kToolbarHeight=56; 
-
+  Size get preferredSize =>
+      const Size.fromHeight(32); //此处0可以调整浮顶组件的高度.kToolbarHeight=56;
 }

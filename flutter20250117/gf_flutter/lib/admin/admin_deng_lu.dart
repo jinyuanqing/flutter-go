@@ -270,26 +270,9 @@ void test_user_token()async{
       "Password": _pwdController.text,
     };
 
-    //  var json_data = json.decode(json_str);
+     
 
-    // print(json_data);
-    // FormData formData1 = new FormData.fromMap({
-    //   //字段名称必须与服务器端一致
-    //   "id": '0',
-    //   "user_name1": 'yonghu_ming1',
-    //   "user_email1": 'mi_ma3',
-    //   "user_password1": 'you_xiang1',
-    //   "user_sexy1": 'shou_ji1',
-    //   "user_address1": 'yonghu_ming1',
-    //   "user_area1": 'mi_ma3',
-    //   "user_tel1": 'you_xiang1',
-    //   "user_nickname1": 'shou_ji1',
-    //   "user_birthday1": 'you_xiang1',
-    //   "user_profession1": 'shou_ji1',
-    // });
-    // Response response;//get包和dio包都有此类型,防止冲突
-
-    var response = await YXHttp().http_post(map0api["登录"]!, json_str111);
+    var response = await YXHttp().http_post(map0api["登录"]!, json_str);
 if (response==null){return;}
     //response.data返回的是json字符串
     //成功登录的请求处理
