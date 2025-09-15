@@ -1092,13 +1092,14 @@ class NestedScrollPage extends StatefulWidget {
 
 class _NestedScrollPageState extends State<NestedScrollPage> {
   final List<String> _tabs = const ['tab1', 'tab2', "tab3", "tab4"];
-  var _yibu;
-  var article_list = []; // 添加这一行
+  Future<bool> ? _yibu; // 修改类型为Future<bool>?
+  var article_list = []; 
 
-  Future<bool> get_article_for_id({int page2 = 1, int fenlei_id = 1}) async {
+  Future<bool> get_article_for_id({int page = 1, int fenlei_id = 1}) async {
     try{
+   
     var res = await YXHttp().http_get(
-        map0api["获取文章"]!, {"page": page2, "token": token, "fenleiid": fenlei_id});
+        map0api["获取文章"]!, {"page": page, "token": token, "fenleiid": fenlei_id});
 
     article_list = res;
    
@@ -1113,10 +1114,9 @@ class _NestedScrollPageState extends State<NestedScrollPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     print("z子组件初始化");
-    _yibu = get_article_for_id();
+    _yibu = get_article_for_id(); // 保持不变
   }
 
   PageController pageController = PageController();
@@ -1180,7 +1180,7 @@ class _NestedScrollPageState extends State<NestedScrollPage> {
           ),
         ),
 
-        // 底部固定栏
+        // 分类列表
         bottom: MyCustomAppBar(
           child: Center(
               child: Column(
@@ -1202,10 +1202,18 @@ class _NestedScrollPageState extends State<NestedScrollPage> {
                           // backgroundColor: Colors.grey[200]
                         ),
                       ),
-                      onPressed: () {
+                      onPressed: () async {
                         print(list_fenlei[i]);
                         // 立即跳转到索引为 1 的页面
                         pageController.jumpToPage(i);
+
+// print(i);
+  //  article_list=[];
+  await get_article_for_id(page: 1, fenlei_id: i+1);//或bool a= await get_article_for_id(page: 1, fenlei_id: i+1);//这种写法不行_yibu=  get_article_for_id(page: 1, fenlei_id: i+1)) as Future<bool>?;
+setState(() {
+  
+});
+
                       },
                     );
                   })),
