@@ -1,4 +1,7 @@
 
+# 相对路径的写法与当前执行的项目目录有关系.
+ 如cmd.go中的casbin的e1, err = casbin.NewEnforcer("./manifest/config/rbac/rbac_model.conf", a) //从本地文件夹加载rbac.conf配置文件
+ 此处与当前项目打开的目录有关系.如果打开非gf2.9目录,而是更上一层目录,则会报错
 
 #  分页查询的page(1,10)从第一条记录开始,返回10条.
 # 存放json的数据格式

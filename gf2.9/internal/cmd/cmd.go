@@ -415,14 +415,13 @@ func befor_user_login(r *ghttp.Request) (string, interface{}) { //登录,验证�
 			"data":    "",
 		})
 		r.ExitAll()
-	} else
-	{
+	} else {
 		//var f,err1=os.Open("./config/rbac/rbac.conf" )
 		//if err1 != nil {
 		//	fmt.Println("文件错误",f)
 		//}
 
-		e1, err = casbin.NewEnforcer("./manifest/config/rbac/rbac_model.conf", a) //从本地文件夹加载rbac.conf配置文件
+		e1, err = casbin.NewEnforcer("./manifest/config/rbac/rbac_model.conf", a) //从本地文件夹加载rbac.conf配置文件 .此处与当前项目打开的目录有关系
 
 		if err != nil {
 
